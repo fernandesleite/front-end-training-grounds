@@ -1,0 +1,85 @@
+.footer {
+  background-color: $color-primary-dark;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
+  color: #fff;
+  &__logo {
+    fill: #fff;
+    width: 25rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    &--social {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid #fff;
+      padding: .5rem;
+      border-radius: 50%;
+      fill: currentColor;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__email {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    columns: 2;
+    
+    @media (max-width: $tab-port) {
+      columns: 1;
+    }
+
+    @media (max-width: $phone) {
+      margin: 5rem 0;
+    }
+  }
+
+  .list {
+    list-style: none;
+
+  }
+
+  .item {
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+  }
+
+  .link:link,
+  .link:visited {
+    text-decoration: none;
+    color: inherit
+  }
+
+  &__social {
+    text-align: center;
+  }
+}

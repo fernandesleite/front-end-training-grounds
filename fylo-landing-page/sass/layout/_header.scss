@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo{
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+  }
+
+  &__nav {
+
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: #000;
+  }
+}

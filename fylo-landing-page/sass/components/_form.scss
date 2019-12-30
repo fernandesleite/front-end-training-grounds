@@ -1,0 +1,42 @@
+.btn {
+  background-color: $color-accent-blue;
+  height: 4.5rem;
+  width: 20rem;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  background-color: $color-accent-blue;
+  cursor: pointer;
+
+  @media (max-width: $phone) {
+    width: 100%;
+  }
+}
+
+.form {
+  &__email {
+    height: 4.5rem;
+    width: 55%;
+    padding: .8rem;
+    margin-right: 1.5rem;
+    border-radius: 3px;
+    border: 1px solid $color-primary-light;
+    margin-bottom: 2rem;
+    @media (max-width: $tab-land) {
+     width: 100%; 
+    }
+
+    @media (max-width: $tab-port) {
+      width: 55%; 
+     }
+
+     @media (max-width: $phone) {
+      width: 100%; 
+     }
+    &::placeholder{
+      color: $color-neutral-dark;
+    }
+  } 
+}
+

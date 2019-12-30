@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+</head>
+
+<body>
+  <header class="header">
+    <svg class="header__logo">
+      <use xlink:href="images/sprites.svg#icon-logo" class="logo"></use>
+    </svg>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Features</a></li>
+        <li class="header__item"><a href="#" class="header__link">Team</a></li>
+        <li class="header__item"><a href="#" class="header__link">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section-about">
+      <div class="section-about__text">
+        <h1 class="primary-heading">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="paragraph">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+
+        </p>
+        <form action="#" class="form section-about__form">
+          <label for="email">
+            <input type="email" name="email" id="email-about" class="form__email section-about__email" placeholder="Enter your email...">
+          </label>
+          <button type="submit" class="btn btn--dark">Get Started</button>
+        </form>
+      </div>
+      <div class="illustration-box">
+        <img src="images/illustration-1.svg" alt="illustration 1" class="illustration">
+      </div>
+
+    
+    </section>
+    <div class="bg"></div>
+    <section class="section-info">
+      <div class="section-info__text">
+        <h1 class="primary-heading">
+          Stay productive, wherever you are
+        </h1>
+        <p class="paragraph">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="paragraph">
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <a href="#" class="section-info__btn">See how Fylo works <img src="./images/icon-arrow.svg" alt=""> </a>
+        <div class="section-info__testimonial-box">
+          <img src="./images/icon-quotes.svg" alt="quotes" class="section-info__icon">
+          <blockquote class="section-info__testimonial">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+            <div class="author">
+              <img src="images/avatar-testimonial.jpg" alt="Testimonial Avatar" class="author__avatar">
+              <div class="author__text">
+                <span class="name">Kyle Burton</span>
+                <span class="function">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      <div class="illustration-box">
+        <img src="images/illustration-2.svg" alt="illustration 2" class="illustration">
+      </div>
+    </section>
+    <section class="section-cta">
+      <div class="section-cta__text">
+      <h2 class="secondary-heading">
+        Get early access today
+      </h2>
+      <p class="paragraph">
+        It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.
+      </p>
+    </div>
+      <form action="#" class="form section-cta__cta">
+        <label for="email">
+          <input type="email" name="email" id="email-cta" placeholder="email@example.com" class="form__email">
+        </label>
+        <button type="submit" class="btn btn--light">Get Started For Free</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <svg class="footer__logo">
+      <use xlink:href="images/sprites.svg#icon-logo-white"></use>
+    </svg>
+    <div class="footer__content">
+      <div class="footer__info">
+        <div class="footer__phone">
+          <svg class="footer__icon">
+            <use xlink:href="images/sprites.svg#icon-phone"></use>
+          </svg>
+          <span class="phone">
+            Phone: +1-543-123-4567
+          </span>
+        </div>
+        <div class="footer__email">
+          <svg class="footer__icon">
+            <use xlink:href="images/sprites.svg#icon-email"></use>
+          </svg>
+          <span class="email">
+            example@fylo.com
+          </span>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <ul class="list">
+          <li class="item"><a href="#" class="link">About Us</a></li>
+          <li class="item"><a href="#" class="link">Jobs</a></li>
+          <li class="item"><a href="#" class="link">Press</a></li>
+          <li class="item"><a href="#" class="link">Blog</a></li>
+          <li class="item"><a href="#" class="link">Contact Us</a></li>
+          <li class="item"><a href="#" class="link">Terms</a></li>
+          <li class="item"><a href="#" class="link">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <svg class="footer__icon footer__icon--social">
+          <use xlink:href="images/sprites.svg#icon-facebook"></use>
+        </svg>
+        <svg class="footer__icon footer__icon--social">
+          <use xlink:href="images/sprites.svg#icon-twitter"></use>
+        </svg>
+        <svg class="footer__icon footer__icon--social">
+          <use xlink:href="images/sprites.svg#icon-instagram"></use>
+        </svg> 
+      </div>
+    </div>
+  </footer>
+  <div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/fernandesleite">Bruno Fernandes</a>.
+    </p>
+  </div>
+</body>
+
+</html>

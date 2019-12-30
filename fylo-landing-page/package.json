@@ -1,0 +1,18 @@
+{
+  "name": "fylo",
+  "version": "1.0.0",
+  "description": "landing page from frontendmentor.io",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "node-sass-chokidar": "^1.4.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "compile:sass": "node-sass-chokidar ./sass/main.scss ./css/style.css --watch --recursive --use-polling --polling-interval 1000",
+    "devserver:": "browser-sync start -s -f \"./index.html\" \"css/*.css\" \"js/**\"",
+    "start": "npm-run-all --parallel devserver compile:sass"
+  },
+  "author": "",
+  "license": "ISC"
+}

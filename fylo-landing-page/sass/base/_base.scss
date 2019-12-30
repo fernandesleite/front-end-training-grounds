@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //converts 1rem = 16px to 1rem = 10px
+
+  @media (max-width: $tab-land) {
+    font-size: 56.25%;
+  }
+
+  @media (max-width: $tab-port) {
+    font-size: 50%;
+  }
+
+  @media (max-width: $phone) {
+    font-size: 45%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header,
+.section-about,
+.section-info,
+.section-cta,
+.footer {
+  padding: 0 7rem;
+
+  @media (max-width: $tab-land) {
+    padding: 0 5rem;
+  }
+
+}
+
+// * {
+//   border: 1px solid #f00 !important;
+// }
